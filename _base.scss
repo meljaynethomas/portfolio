@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&display=swap');
+
+$font-main: "Josefin Slab", serif;
+
+$color-primary: #606060;
+$color-secondary: #F8F8FF;
+$color-tertiary: #D2E2E0;
+$color-accent: #F8ECC1;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-main;
+  color: $color-primary;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+.homepage__navbar__button:hover {
+  text-decoration: underline;
+}
+
+#contact__social__github,
+#contact__social__linkedin,
+.projects__portfolio__button,
+.projects__portfolio__button-2:hover {
+  text-decoration: none;
+}
+
+%button {
+  height: 40px;
+  width: 140px;
+  text-align: center;
+  background-color: $color-secondary;
+  border: 2px solid $color-primary;
+  border-radius: 10px;
+  margin: auto;
+  padding: 10px;
+  font-size: 15px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+}
+

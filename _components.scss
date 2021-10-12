@@ -1,0 +1,99 @@
+.homepage__image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.about__text__info {
+  background-image: url("./images/dandelion_seeds.png");
+  background-color: $color-tertiary;
+  background-size: 300px 300px;
+  background-repeat: no-repeat;
+  background-position: 225% 200%;
+}
+    
+[id^='skills__tech__'] {
+    font-size: 90px;
+}
+
+[id^='skills__tech__']:hover {
+  opacity: 0.80;
+}
+
+.projects__portfolio__display {
+  position: relative;
+  height: 400px;
+  width: 600px;
+}
+
+.projects__portfolio__image {
+  display: block;
+  height: 400px;
+  width: 600px;
+  border: solid 2px $color-primary;
+  border-radius: 10px;
+}
+
+.projects__portfolio__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 400px;
+  width: 600px;
+  border: solid 2px $color-primary;
+  border-radius: 10px;
+  background-color: $color-tertiary;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.projects__portfolio__overlay:hover {
+  opacity: 1;
+}
+
+.projects__portfolio__text {
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+  padding: 60px;
+  }
+
+.projects__portfolio__button {
+  @extend %button;
+}
+
+.projects__portfolio__button-2 {
+  @extend %button;
+  margin-top: 10px;
+}
+
+.contact__image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: $color-tertiary;
+  overflow: hidden;
+}
+
+.wave-2, .wave-3 {
+  background-color: $color-accent;
+}
+
+.wave-4 {
+  background-color: $color-tertiary;
+}
+
+@media screen and (max-width:768px) {
+  .homepage__image__dandelion-image-small {
+    display: none;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .contact__image__dandelion-image-small {
+    display: none;
+  }
+}

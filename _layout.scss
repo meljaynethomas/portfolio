@@ -1,0 +1,156 @@
+.homepage {
+  background-color: $color-secondary;
+
+  &__navbar {
+    width: 100%;
+    height: 50px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    background-color: $color-secondary;
+  }
+
+  &__header {
+    padding: 40px;
+    margin: 50px;
+    background-color: $color-secondary;
+  }
+
+  &__name {
+    font-size: 60px;
+    margin-top: 50px;
+  }
+
+  &__title {
+    font-size: 40px;
+  }
+}
+
+.about {
+  width: 100%;
+  background-color: $color-tertiary;
+  padding: 0 0 100px 0;
+
+  &__heading {
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    padding: 120px;
+    background-color: $color-tertiary;
+  }
+
+  &__text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 25px;
+    background-color: $color-tertiary;
+
+    @media screen and (max-width:1320px) {
+        flex-direction: column;
+    }
+      
+    &__info {
+      position: relative;
+      display: flex;
+      border: solid $color-primary 2px;
+      border-radius: 10px;
+      height: 400px;
+      width: 400px;
+      text-align: center;
+      padding: 30px;
+      margin: 20px;
+
+        p {
+          position: absolute;
+          top: 200px;
+          left: 0;
+          width: 100%;
+        }
+    } 
+  }
+}
+
+.skills {
+  width: 100%;
+  height: auto;
+  background-color: $color-accent;
+
+  &__heading {
+    font-size: 40px;
+    text-align: center;
+    padding: 40px 0px;
+    background-color: $color-accent;
+  }
+
+  &__text {
+    font-size: 25px;
+    text-align: center;
+    padding: 40px 0px;
+    background-color: $color-accent;
+  }
+
+  &__tech {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    padding: 40px;
+    justify-content: center;
+    place-items: center;
+
+    @media screen and (max-width:768px) {
+        grid-template-columns: 1fr 1fr;
+    } 
+  }
+}
+
+.projects {
+  width: 100%;
+
+  &__heading {
+    font-size: 40px;
+    text-align: center;
+    padding: 80px;
+    background-color: $color-secondary;
+  }
+  &__portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    background-color: $color-secondary;
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &__heading {
+    font-size: 40px;
+    text-align: center;
+    padding: 40px 0;
+    background-color: $color-tertiary;
+  }
+
+  &__email {
+    font-size: 25px;
+    text-align: center;
+    padding: 40px 0;
+    height: 100%;
+    background-color: $color-tertiary;
+  }
+
+  &__social {
+    font-size: 40px;
+    text-align: center;
+    background-color: $color-tertiary;
+  }
+}
