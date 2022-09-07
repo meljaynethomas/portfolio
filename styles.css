@@ -151,10 +151,9 @@ a:visited {
 }
 .projects__portfolio {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
   background-color: #F8F8FF;
 }
 
